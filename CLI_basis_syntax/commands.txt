@@ -35,10 +35,11 @@ git commit -m "bericht"
 Slaat de huidige inhoud van de staging area op in de repository, met een bijgevoegd bericht dat de commit beschrijft:
 git commit -m "Een beschrijvend bericht over wat je hebt veranderd"
 
+---------------------------
 Branching en Merging. Lijst alle lokale branches in de huidige repository:
 git branch -h
 
-Om een nieuwe branch te maken:
+Nieuwe branch maken:
 git branch nieuwe-branch
 git checkout [branch-naam]
 
@@ -47,11 +48,16 @@ git checkout bestaande-branch
 
 Om een nieuwe branch te maken en direct naar te wisselen:
 git checkout -b nieuwe-branch
-git merge [branch]
 
 Voegt wijzigingen van één branch (bijvoorbeeld branch) samen in de huidige branch:
+git merge [branch]
 git merge branch-naam
 
+Branch hernoemen:
+git branch -m originalName tempName
+git branch -m tempName newName
+
+---------------------------
 Werken met Remotes:
 git remote -h
 
