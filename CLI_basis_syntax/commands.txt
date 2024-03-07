@@ -1,0 +1,90 @@
+Deze commando's dekken de basisfunctionaliteiten van Git af.
+Van het initialiseren van een nieuwe repository tot het pushen van wijzigingen naar een remote repository.
+
+Basis Setup:
+git config -h 
+
+Gebruik dit om Git globaal of lokaal te configureren. Bijvoorbeeld, om je naam en email in te stellen:
+git config --global user.name "Jouw Naam"
+git config --global user.email "jouwemail@voorbeeld.com"
+
+Werken met Repositories:
+git init -h
+
+Initialiseert een nieuwe Git-repository in de huidige directory:
+git init -h
+git clone https://github.com/calvinklemmer/git-and-github.git
+
+Maakt een lokale kopie van een remote repository:
+git clone https://github.com/calvinklemmer/git-and-github.git
+
+Basis van Wijzigingen:
+git status -h
+
+Toont de status van wijzigingen als niet bijgehouden, gewijzigd, of staged:
+git status
+git add [bestandsnaam]
+
+Voegt bestanden toe aan de staging area ter voorbereiding op een commit:
+git add bestand.txt
+
+Om alle wijzigingen toe te voegen:
+git add .
+git commit -m "bericht"
+
+Slaat de huidige inhoud van de staging area op in de repository, met een bijgevoegd bericht dat de commit beschrijft:
+git commit -m "Een beschrijvend bericht over wat je hebt veranderd"
+
+Branching en Merging. Lijst alle lokale branches in de huidige repository:
+git branch -h
+
+Om een nieuwe branch te maken:
+git branch nieuwe-branch
+git checkout [branch-naam]
+
+Wisselt naar een bestaande branch en update de working directory:
+git checkout bestaande-branch
+
+Om een nieuwe branch te maken en direct naar te wisselen:
+git checkout -b nieuwe-branch
+git merge [branch]
+
+Voegt wijzigingen van één branch (bijvoorbeeld branch) samen in de huidige branch:
+git merge branch-naam
+
+Werken met Remotes:
+git remote -h
+
+Toont een lijst van alle remote repositories die zijn verbonden:
+git remote -v
+git fetch [remote]
+
+Haalt updates op van een remote repository maar merge ze niet met lokale wijzigingen:
+git fetch -h
+git fetch origin
+git pull [remote] [branch]
+
+Haalt updates op van een remote repository en merge ze direct met de lokale kopie van die branch:
+git pull -h
+git pull origin master
+git push [remote] [branch]
+
+Uploadt lokale branch commits naar de remote repository:
+git push origin master
+
+Toont de commitgeschiedenis van de huidige branch:
+git log -h
+
+Dit zijn enkele van de meest fundamentele Git commando's die je als beginner moet kennen. 
+Het beheersen van deze commando's geeft je een solide basis voor het werken met Git en versiebeheer in je projecten.
+
+
+
+
+
+
+
+
+
+
+
